@@ -1,0 +1,77 @@
+{
+  "name": "namquasi",
+  "version": "1.0.0",
+  "description": "Solidity & TypeScript Integration, Configuration and Examples",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CliftonMurazik/namquasi.git"
+  },
+  "keywords": [
+    "ea",
+    "Ethereum",
+    "TypeScript",
+    "web3",
+    "dapp"
+  ],
+  "author": "MyraWehner",
+  "authors": [
+    {
+      "name": "Victor Baybekov",
+      "email": "Victor@dbrain.io",
+      "url": "https://github.com/buybackoff"
+    },
+    {
+      "name": "Yury Alexandrov",
+      "email": "Yury@dbrain.io",
+      "homepage": "https://github.com/dizer"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^21.1.2",
+    "@types/node": "^8.0.28",
+    "@types/utf8": "^2.1.6",
+    "ethereumjs-testrpc": "^4.1.3",
+    "jest": "^21.2.1",
+    "solc": "^0.4.17",
+    "truffle": "^3.4.11",
+    "ts-jest": "^21.0.1",
+    "tslint": "^5.7.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.5.3",
+    "zeppelin-solidity": "^1.3.0"
+  },
+  "dependencies": {
+    "bignumber.js": "^4.0.0",
+    "copyfiles": "^1.2.0",
+    "ethereumjs-util": "^5.1.2",
+    "keythereum": "^1.0.2",
+    "truffle-contract": "^3.0.0",
+    "utf8": "^2.1.2",
+    "web3": "^0.20.2"
+  },
+  "peerDependencies": {
+    "bignumber.js": "^4.0.0"
+  },
+  "bin": {
+    "soltsice": "dist/src/soltsice.js"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.ts?(x)",
+      "<rootDir>/src/**/?(*.)(spec|test).ts?(x)"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ]
+  }
+}
